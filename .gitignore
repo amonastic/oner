@@ -1,0 +1,12 @@
+/dist //忽略dist文件夹里面所有的文件
+/node_modules
+
+logs
+*.log  //忽略所有用它做后缀的文件
+npm-debug.log*
+
+.vscode/*  //忽略掉这个目录的文件
+!.vscode/setting.json  //【!】表示这个目录不能被忽略的文件
+!.vscode/tasks.json
+!.vocode/launch.json
+!.vscode/extensions.json
