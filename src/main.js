@@ -5,6 +5,8 @@ const http = require('http'); //模块名字 = 导入模块（导入的模块名
 //两者名字无所谓，顺序很重要
 
 const server = http.createServer((request, Response) => {  //http模块提供的一个方法，把提供的服务放在一个函数中，该函数可以成为createServer方法的一个参数，可以单独定义或者直接添加无名的函数再交给createServer
+    console.log(request.headers['user-agent']); //请求request
+
     request.write('hello ~');  //响应一段文字
     Response.end(); //结束响应
 
