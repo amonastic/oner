@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "declaration": true,
+      "removeComments": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "target": "es2017",
+      "sourceMap": true,
+      "outDir": "./dist",//编译文件存放在的位置，可以让node运行的内容
+      "baseUrl": "./",
+      "incremental": true
+    },
+    "include": ["src/**/*"],//ts编写的文件放在这里，这里设置编译src下面所有的文件
+    "exclude": ["node_modules", "dist"]
+  
+  }
